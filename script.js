@@ -75,7 +75,7 @@
 //     emp[key] = obj2[key]
 // }
 // console.log(emp);
-
+//good morning this is 31 dec 
 
 let obj1 = {
   a: 10,
