@@ -390,3 +390,20 @@
 
 // console.log(count); // 3
 
+let original = {
+  name: "Radhey",
+  address: {
+    city: "Delhi"
+  }
+};
+
+let shallowCopy = { ...original };
+
+// change nested property
+shallowCopy.address.city = "Noida";
+
+console.log(original.address.city); // ❗ Noida
+console.log(shallowCopy.address.city); // Noida
+
+
+console.log(object)
