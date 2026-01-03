@@ -376,7 +376,6 @@
 // let obj1 = { b: 1, obj2: { a: 2, obj3: { c: 3, obj4: { r: 4 } } } };
 // console.log(obj1);
 
-
 // let obj = {
 //   a: 1,
 //   b: 2,
@@ -390,20 +389,121 @@
 
 // console.log(count); // 3
 
-let original = {
-  name: "Radhey",
-  address: {
-    city: "Delhi"
-  }
-};
+// let original = {
+//   name: "Radhey",
+//   address: {
+//     city: "Delhi"
+//   }
+// };
 
-let shallowCopy = { ...original };
+// let shallowCopy = { ...original };
 
-// change nested property
-shallowCopy.address.city = "Noida";
+// // change nested property
+// shallowCopy.address.city = "Noida";
 
-console.log(original.address.city); // ❗ Noida
-console.log(shallowCopy.address.city); // Noida
+// console.log(original.address.city); // ❗ Noida
+// console.log(shallowCopy.address.city); // Noida
+
+// // console.log(object)
+
+// let base = { a: 10 };
+// let obj = Object.create(base);
+
+// obj.a = 20;
+
+// console.log(obj.a);
+// console.log(base.a);
+// console.log(obj.hasOwnProperty("a"));
+// console.log("a" in obj);
+
+// let user1 = { name: "Radhey" };
+// let user2 = user1;
+
+// user2.name = "Bairagi";
+
+// console.log(user1.name);
+// console.log(user2.name);
+
+// let parent = { x: 5 };
+// let child = Object.create(parent);
+
+// child.x = 10;
+// delete child.x;
+
+// console.log(child.x);
+
+// let obj = Object.freeze({
+//   a: 1,
+//   b: { c: 2 }
+// });
+
+// obj.a = 100;
+// obj.b.c = 200;
+
+// console.log(obj);
+
+// let obj = {
+//   2: "two",
+//   1: "one",
+//   b: "bee",
+//   a: "aye"
+// };
+
+// for (let key in obj) {
+//   console.log(key);
+// }
+
+// let a = { value: 10 };
+// let b = { value: 10 };
+
+// console.log(a == b);
+// console.log(a === b);
+
+// let obj = Object.create(null);
+// obj.x = 10;
+
+// console.log(obj.hasOwnProperty("x"));
+
+// let obj = Object.create({ a: 1 });
+// obj.b = 2;
+
+// console.log("a" in obj);
+
+// console.log(obj.hasOwnProperty("a"));
+
+// let arr = [8,5,1,4,5,3,2]
+// let lastOcc = []
+// let extra = []
+// for(let i=0; i<arr.length; i++){
+// if(!(lastOcc.includes(arr[i]))){
+//     lastOcc.push(arr[i])
+// }else{
+//     extra.push(i)
+// }
+// }
+// console.log(extra);
+
+// let arr = [8, 5, 1, 4, 5, 3, 2];
+// let dup = [];
+// let rep = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (!dup.includes(arr[i])) {
+//     dup.push(arr[i]);
+//   } else {
+//     rep.push(i);
+//   }
+// }
+
+// console.log(rep[rep.length-1]);
 
 
-console.log(object)
+// let given = 5
+// let arr = [8, 5, 1, 4, 5, 3, 2];
+// let store = 0
+// for(let i=0; i<arr.length; i++){
+// if(arr[i] == given){
+//     store = i
+// }
+// }
+// console.log(store);
+
