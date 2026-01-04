@@ -505,5 +505,48 @@
 //     store = i
 // }
 // }
-// console.log(store);
+// // console.log(store);
+
+// let arr = [
+//   { name: "A", marks: 95 },
+//   { name: "B", marks: 88 },
+//   { name: "C", marks: 97 }
+// ];
+
+// let total = 0
+// for(let i=0; i<arr.length; i++){
+//    total += arr[i].marks
+// }
+// console.log(total/arr.length)
+
+
+// let arr = [
+//   { name: "A", marks: 95 },
+//   { name: "B", marks: 88 },
+//   { name: "C", marks: 57 },
+//   { name: "d", marks: 27 },
+//   { name: "e", marks: 60 }
+// ];
+
+// let store = []
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i].marks >= 80){
+//         arr[i].grade = 'A'
+//     }
+//     else if(
+//         arr[i].marks >= 50){
+//         arr[i].grade = 'B'
+//     }
+//     else if(
+//         arr[i].marks <= 50){
+//         arr[i].grade = 'Fail students'
+//     }
+// }
+// console.log(arr)
+
+
+
+// https://radhy-shyam-29.github.io/Daily-Scoop-Webpage-Clone/
+
+
 
