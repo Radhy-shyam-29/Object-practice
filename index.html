@@ -1,31 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    .pic {
-  float: left;
-  width: 150px;
-  margin-right: 10px;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: grid;
+      grid-template-areas:
+        "nav nav nav"
+        "menu main sidebar"
+        "footer footer footer";
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      height: 100vh;
+      margin: 0;
+    }
 
-</style>
+    nav {
+      grid-area: nav;
+      background-color: #f8b400;
+      padding: 10px;
+      text-align: center;
+    }
+
+    div:nth-of-type(1) {
+      grid-area: menu;
+      background-color: #6ab04c;
+      padding: 10px;
+    }
+
+    div:nth-of-type(2) {
+      grid-area: main;
+      background-color: #2980b9;
+      padding: 10px;
+      color: white;
+    }
+
+    sidebar {
+      grid-area: sidebar;
+      background-color: #8e44ad;
+      padding: 10px;
+      color: white;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #e74c3c;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
 <body>
+
+<nav>Title</nav>
+
+<div>
+  <ul>
+    <li>home</li>
+    <li>about</li>
+    <li>contact</li>
+  </ul>
+</div>
+
+<div>
+  <h1>Header</h1>
+  <p>Content goes here Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis fugit velit similique perferendis, voluptas quod ipsum, fuga perspiciatis voluptates aut nam repellat? Praesentium dolorem dolores amet accusamus quisquam beatae.</p>
+</div>
+
+<sidebar>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dicta minima amet nostrum ullam eligendi doloribus at maxime enim excepturi nemo corrupti quaerat, voluptas, facilis tenetur adipisci consequuntur? Quidem, labore?</sidebar>
+
+<footer>Closing Notes</footer>
+<!-- 
+grid-template-areas:
+  "header header header header header "
+  "sidebar main main sidebar"
+  "footer footer footer sidebar"
+  "extra extra extra extra" -->
+
   
-<p>
-  Ye text image ke around wrap ho jayega. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum dolorum in quisquam odit laboriosam facere sapiente itaque veritatis dolor molestias voluptatem ab magni, nihil maxime quibusdam, voluptas aliquid, laudantium asperiores.
-  Provident quo debitis quos magni numquam itaque ipsum, perspiciatis natus quasi fuga nulla commodi nihil voluptas, error porro tenetur enim autem architecto laborum eos sed aperiam maiores voluptates? Suscipit, sapiente.
-  Incidunt commodi architecto iusto non obcaecati voluptatem necessitatibus unde numquam sint nesciunt! Maiores id totam a. Fugit, saepe id sequi, numquam delectus consequuntur quos magni porro qui, nam dolorum aliquid!
-  Deleniti, numquam! Ipsam, deserunt suscipit? Expedita laudantium rem totam doloremque molestiae, obcaecati illum adipisci assumenda fugit consequuntur debitis ad voluptatem nostrum nobis incidunt laborum quidem vel vitae. Unde, accusamus deleniti.  <img src="data:image/webp;base64,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" class="pic">
-  Aspernatur placeat dolores, dolorum voluptatibus repudiandae ad quod quo qui eum sed rerum labore accusamus eaque facilis inventore veniam optio, nihil excepturi, assumenda est iusto nulla. Quae eligendi exercitationem sequi!
-  Earum ut quas enim saepe et hic quis exercitationem. Doloribus illum quam ab. Obcaecati corporis, dicta fuga earum, ad officia expedita consequuntur minima voluptatem debitis incidunt quod labore sequi omnis!
-  Mollitia officia qui ea labore sit placeat repellendus reiciendis laudantium aliquam? Fuga, in. Sequi quisquam autem, voluptas aspernatur molestiae ipsa praesentium similique labore odio repellendus quam in perferendis dolor tempore?
-  Quaerat impedit pariatur architecto nihil facilis fugit molestias veniam blanditiis et quae assumenda possimus eum reprehenderit minus, voluptatibus obcaecati repellat, quibusdam laborum corporis neque. Eveniet possimus fugit eius atque eaque.
-  Ipsam, blanditiis illo aut odit sed est voluptates! Modi sint nulla libero eveniet, doloremque ipsa nemo? Repellat aspernatur vitae quidem! Repellendus molestiae eos repudiandae consequuntur aliquam quam. Tempora, minus provident?
-  Impedit enim similique, dolor voluptates quibusdam assumenda recusandae temporibus corrupti earum odio distinctio rem dignissimos quod ut qui doloribus velit suscipit. Harum voluptas magni, eius cupiditate perferendis ex laudantium? Debitis.
-</p>
+
 </body>
 </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Radhey</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZdKEnLhWsZcAhEHKq-z8AVrFaRJ2DE02G3w&s">
+  </head>
+  <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 6fr 1fr;
+      grid-template-rows: 50px 50px auto 50px;
+      grid-template-areas: 
+      "navbar navbar"
+      "menu-button aside"
+        "paragraph aside"
+        "footer footer";
+    }
+    .navbar {
+      grid-area: navbar;
+      background-color: aqua;
+      display: flex;
+      justify-content: center;
+    }
+    .menu-button {
+      grid-area: menu-button;
+      background-color: aquamarine;
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      justify-content: space-evenly;
+      a{
+        text-decoration: none;
+        color: black;
+      }
+    }
+    .paragraph {
+      grid-area: paragraph;
+      background-color: bisque;
+      /* font-size: 1.5em; */
+    }
+    .aside {
+      grid-area: aside;
+      background-color: blueviolet;
+    }
+    .footer {
+      grid-area: footer;
+      background-color: cadetblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <div class="container">
+      
+        <h1 class="navbar">Radhey Bairagi</h1>
+      
+
+      <div class="menu-button">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Content</a>
+      </div>
+
+      <div class="paragraph">
+        <p>
+         HTML and CSS are the foundational technologies used to build and design websites. HTML (HyperText Markup Language) is responsible for the structure of a web page—it defines elements like headings, paragraphs, images, links, forms, and layouts. CSS (Cascading Style Sheets) is used to control the appearance of those HTML elements, including colors, fonts, spacing, alignment, responsiveness, and animations. While HTML creates the skeleton of a website, CSS adds visual styling and enhances user experience across different devices and screen sizes. Together, HTML and CSS enable developers to create well-structured, visually appealing, and responsive web pages that form the base of modern web development.
+        </p>
+      </div>
+
+      <div class="aside">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia est,
+            voluptatibus quasi sunt laborum aspernatur cupiditate nulla aliquid
+            praesentium adipisci, nihil quam dignissimos vitae velit tenetur
+            assumenda. Id, autem perspiciatis.
+          </p>
+      </div>
+      
+
+      <div class="footer">
+
+          <p>Closing Now --- Copyright 2024 &copy; ---</p>
+      </div>
+    </div>
+  </body>
+</html>
